@@ -117,22 +117,5 @@ class Spline:
         return result
 
 
-s = Spline([0, 2, 4, 6, 8, 10], [0, 4, 16, 36, 64, 100])
-s.set_first_boundary_condition(0, 20)
-print(s.interpolate_at_point(3))
-
-ss = Spline([0, 2, 4, 6, 8, 10], [0, 4, 16, 36, 64, 100])
-ss.set_second_boundary_condition(2, 2)
-print(ss.interpolate_at_point(3))
-#print(ss.spline_as_string(1))
-print(ss.all_splines_as_string())
-
-sss = Spline([0, 2, 4, 6, 8, 10], [0, 4, 16, 36, 64, 100])
-sss.set_third_boundary_condition()
-print(sss.interpolate_at_point(3))
-
-a = 2 + 3
-
-
 
 
